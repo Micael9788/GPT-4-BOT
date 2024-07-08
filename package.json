@@ -1,0 +1,22 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev -r dotenv/config --respawn --transpile-only --ignore-watch node_modules src/server.ts dotenv_config_path=.env",
+    "build": "yarn tsc & node scripts/copy-files.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "telegraf": "^4.16.3",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}
